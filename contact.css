@@ -1,0 +1,330 @@
+body {
+  background: #f8f8f8;
+  color: #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  hyphens: auto;
+  letter-spacing: 1px;
+  margin: 0px;
+  text-align: left;
+  text-transform: none;
+  word-wrap: break-word;
+}
+
+#iit-wrapper {
+  align-items: center;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 0px;
+  width: 100px;
+}
+
+.icon-image {
+  height: 70px;
+  margin-top: 20px;
+  width: 70px;
+}
+
+.icon-image img {
+  border-radius: 100px;
+  height: 70px;
+  width: 70px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: lowercase;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+}
+
+#info {
+  background-image: url("https://github.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/blob/main/pexels-photo-16511744.jpeg?raw=true");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-right: 1px solid #eeeeee;
+  height: 100%;
+  margin-left: 100px;
+  position: absolute;
+  top: 0px;
+  width: 300px;
+}
+
+.dl-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: calc(100%-40px);
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 260px;
+}
+
+.description {
+  background: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 220px;
+}
+
+.links {
+  background: #ffffff;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 260px;
+}
+
+.links a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a:hover {
+  color: #cfcfcf;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+button {
+  background: #81070781;
+
+  border: none;
+  margin-top: 2em;
+  padding: 10px;
+  color: #d0d4dc;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  hyphens: auto;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+
+.dark-mode button {
+  background: #00000081;
+}
+
+.dark-mode button:hover {
+  color: #555555;
+}
+
+button:hover {
+  transition: all 0.5s ease;
+  color: #f89393;
+}
+
+body.dark-mode {
+  background: #1c232d;
+}
+
+.dark-mode .entries-wrapper,
+.dark-mode .top-post-info {
+  background: #232932c1;
+  border: 1px solid #1b172996;
+  color: #a4a7ab;
+}
+
+.dark-mode .description,
+.dark-mode .links {
+  background-color: #262d36;
+  color: #b3b6bc;
+}
+.dark-mode #info {
+  background-image: url("https://github.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/blob/main/pexels-photo-2098427.jpeg?raw=true");
+}
+
+body,
+.description,
+.links,
+.entries-wrapper,
+.top-post-info,
+#info {
+  transition: all 0.5s ease;
+}
+
+.home::before {
+  content: "\f015";
+  font: var(--fa-font-solid);
+}
+
+.projects::before {
+  content: "\f0ae";
+  font: var(--fa-font-solid);
+}
+
+.contact::before {
+  content: "\f2b9";
+  font: var(--fa-font-regular);
+}
+
+.calendar::before {
+  content: "\f133";
+  font: var(--fa-font-regular);
+}
+
+.about::before {
+  content: "\f007";
+  font: var(--fa-font-solid);
+}
+
+.github::before {
+  content: "\f09b";
+  font: var(--fa-font-brands);
+  font-size: x-large;
+}
+
+.discord::before {
+  content: "\f392";
+  font: var(--fa-font-brands);
+  font-size: 22px;
+}
+
+.discord::before,
+.github::before {
+  color: #d0d4dc;
+}
+.dark-mode .about,
+.dark-mode .calendar::before,
+.dark-mode .home::before,
+.dark-mode .contact::before,
+.dark-mode .projects::before,
+.dark-mode a {
+  color: rgb(203, 206, 209);
+}
+
+.socials {
+  flex-direction: column;
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.socials span {
+  display: block;
+  width: 20px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label,
+input,
+textarea {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 200px;
+}
+
+#posts-wrapper {
+  margin-left: 200;
+  width: calc(100% -200px);
+}
+
+#posts {
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 452px;
+}
+
+.entries {
+  margin-bottom: 50px;
+  width: 452px;
+}
+
+.entries-wrapper {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  width: 570px;
+}
+
+fbutton {
+  background: #b54949;
+  border: none;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  hyphens: auto;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.dark-mode fbutton {
+  background: #00000081;
+}
+
+.dark-mode fbutton:hover {
+  color: #555555;
+}
+
+.dark-mode .input{
+  color: #262d36;
+}
+
+fbutton:hover {
+  transition: all 0.5s ease;
+  color: #f89393;
+}
+
+.dark-mode .textarea{
+  background-color:262d36;
+}
