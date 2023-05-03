@@ -26,6 +26,14 @@ body {
   width: 100px;
 }
 
+#iit-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .icon-image {
   height: 70px;
   margin-top: 20px;
@@ -49,7 +57,7 @@ body {
   writing-mode: vertical-rl;
 }
 
-#info{
+#info {
   background-image: url("https://github.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/blob/main/pexels-photo-16511744.jpeg?raw=true");
   background-position: center;
   background-repeat: no-repeat;
@@ -178,8 +186,6 @@ blockquote.parent:last-child {
   margin-top: 0px;
 }
 
-
-
 button {
   background: #81070781;
 
@@ -225,7 +231,7 @@ body.dark-mode {
   background-color: #262d36;
   color: #b3b6bc;
 }
-.dark-mode #info{
+.dark-mode #info {
   background-image: url("https://github.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/blob/main/pexels-photo-2098427.jpeg?raw=true");
 }
 
@@ -263,19 +269,20 @@ body,
   font: var(--fa-font-solid);
 }
 
-.github::before{
+.github::before {
   content: "\f09b";
   font: var(--fa-font-brands);
   font-size: x-large;
 }
 
-.discord::before{
+.discord::before {
   content: "\f392";
   font: var(--fa-font-brands);
   font-size: 22px;
 }
 
-.discord::before, .github::before{
+.discord::before,
+.github::before {
   color: #d0d4dc;
 }
 .dark-mode .about,
@@ -289,16 +296,245 @@ body,
 
 .socials {
   flex-direction: column;
-  position: absolute; 
+  position: absolute;
   bottom: 100px;
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
 }
 
 .socials span {
   display: block;
   width: 20px;
   height: 80px;
-  background-size: contain; 
-  background-repeat: no-repeat; 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-device-width: 414px), screen and (max-width: 414px),  screen and (max-device-width: 768px), screen and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  #iit-wrapper {
+    align-items: center;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  #iit-group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .socials {
+    position: static;
+    flex-direction: row;
+
+  }
+
+  .socials span {
+    height: 100%;
+    margin-right: 20px;
+  }
+ 
+
+
+  .icon-image {
+    height: 70px;
+    margin-top: 5px;
+    width: 70px;
+    
+  }
+  
+  .icon-image img {
+    border-radius: 100px;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .title {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    transform: none;
+    writing-mode: horizontal-tb;
+    white-space: nowrap;
+    padding: 0 10px; 
+  }
+  #info {
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+
+  
+  .description {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .links {
+    flex-wrap: wrap;
+
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .links a {
+    margin: 0.5rem;
+  }
+
+  #posts-wrapper {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 15%; 
+    
+  }
+
+  #posts {
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .entries {
+    margin-bottom: 2rem;
+    width: 100%;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .entries-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .top-post-info {
+    padding: 1rem;
+  }
+
+  .pslr {
+    flex-wrap: wrap;
+  }
+
+
+  .home::before,
+  .projects::before,
+  .contact::before,
+  .calendar::before,
+  .about::before,
+  .github::before,
+  .discord::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    width: 20px;
+    height: 20px;
+    font-size: 1.2rem;
+  }
+
+  .home::before {
+    content: "\f015";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .projects::before {
+    content: "\f0ae";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .contact::before {
+    content: "\f2b9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+  }
+
+  .calendar::before {
+    content: "\f133";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+  }
+
+  .about::before {
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .github::before {
+    content: "\f09b";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 1.2rem;
+  }
+
+  .discord::before {
+    content: "\f392";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 1.2rem;
+  }
+
+  .discord::before,
+  .github::before {
+    color: #d0d4dc;
+  }
+
+  .dark-mode .about,
+  .dark-mode .calendar::before,
+  .dark-mode .home::before,
+  .dark-mode .contact::before,
+  .dark-mode .projects::before,
+  .dark-mode a {
+    color: rgb(203, 206, 209);
+  }
+  .dark-mode .about,
+  .dark-mode .calendar::before,
+  .dark-mode .home::before,
+  .dark-mode .contact::before,
+  .dark-mode .projects::before,
+  .dark-mode a {
+    color: rgb(203, 206, 209);
+  }
+}
+@media screen and (max-device-width: 414px), screen and (max-width: 414px){
+  .dl-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60vh; 
+  }
+}
+
+@media screen and (max-device-width: 768px), screen and (max-width:768px){
+  .dl-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 75vh; 
+  }
 }
