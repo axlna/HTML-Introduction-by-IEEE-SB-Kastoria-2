@@ -21,10 +21,18 @@ body {
   flex-wrap: wrap;
   height: 100%;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   top: 0px;
   width: 100px;
 }
+
+#iit-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .icon-image {
   height: 70px;
@@ -57,7 +65,7 @@ body {
   border-right: 1px solid #eeeeee;
   height: 100%;
   margin-left: 100px;
-  position: absolute;
+  position: fixed;
   top: 0px;
   width: 300px;
 }
@@ -108,6 +116,74 @@ a {
   color: #000000;
   text-decoration: none;
   transition: all 0.5s ease;
+}
+
+#posts-wrapper {
+  margin-left: 200;
+  width: calc(100% -200px);
+}
+
+#posts {
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 452px;
+}
+
+.entries {
+  margin-bottom: 50px;
+  width: 452px;
+}
+
+.entries-wrapper {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  width: 580px;
+}
+
+.top-post-info {
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px;
+}
+
+.pslr {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.pslr-a {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.date {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.text-wrapper {
+  margin: 20px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-block-start: 0em;
+  text-transform: lowercase;
+}
+blockquote.parent:last-child {
+  border: none;
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.text p {
+  margin-top: 0px;
 }
 
 button {
@@ -166,6 +242,73 @@ body,
 .top-post-info,
 #info {
   transition: all 0.5s ease;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label,
+input,
+textarea {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 200px;
+}
+
+fbutton {
+  background: #b54949;
+  border: none;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  hyphens: auto;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.dark-mode fbutton {
+  background: #00000081;
+}
+
+.dark-mode fbutton:hover {
+  color: #555555;
+}
+
+.dark-mode .input{
+  color: #262d36;
+}
+
+fbutton:hover {
+  transition: all 0.5s ease;
+  color: #f89393;
 }
 
 .home::before {
@@ -234,94 +377,249 @@ body,
   background-repeat: no-repeat;
 }
 
-form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-device-width: 414px), screen and (max-width: 414px),  screen and (max-device-width: 768px), screen and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  #iit-wrapper {
+    align-items: center;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  #iit-group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .socials {
+    position: static;
+    flex-direction: row;
+
+  }
+
+  .socials span {
+    height: 100%;
+    margin-right: 20px;
+  }
+ 
+
+
+  .icon-image {
+    height: 70px;
+    margin-top: 5px;
+    width: 70px;
+    
+  }
+  
+  .icon-image img {
+    border-radius: 100px;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .title {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    transform: none;
+    writing-mode: horizontal-tb;
+    white-space: nowrap;
+    padding: 0 10px; 
+  }
+  #info {
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+
+  
+  .description {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .links {
+    flex-wrap: wrap;
+
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .links a {
+    margin: 0.5rem;
+  }
+
+  #posts-wrapper {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 15%; 
+    
+  }
+
+  #posts {
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .entries {
+    margin-bottom: 2rem;
+    width: 100%;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .entries-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .top-post-info {
+    padding: 1rem;
+  }
+
+  .pslr {
+    flex-wrap: wrap;
+  }
+
+  form {
+    max-width: 400px;
+    
+  }
+  
+
+
+
+  
+  textarea {
+    height: 150px;
+  }
+
+  fbutton {
+  
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .home::before,
+  .projects::before,
+  .contact::before,
+  .calendar::before,
+  .about::before,
+  .github::before,
+  .discord::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    width: 20px;
+    height: 20px;
+    font-size: 1.2rem;
+  }
+
+  .home::before {
+    content: "\f015";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .projects::before {
+    content: "\f0ae";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .contact::before {
+    content: "\f2b9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+  }
+
+  .calendar::before {
+    content: "\f133";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+  }
+
+  .about::before {
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .github::before {
+    content: "\f09b";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 1.2rem;
+  }
+
+  .discord::before {
+    content: "\f392";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 1.2rem;
+  }
+
+  .discord::before,
+  .github::before {
+    color: #d0d4dc;
+  }
+
+  .dark-mode .about,
+  .dark-mode .calendar::before,
+  .dark-mode .home::before,
+  .dark-mode .contact::before,
+  .dark-mode .projects::before,
+  .dark-mode a {
+    color: rgb(203, 206, 209);
+  }
+  .dark-mode .about,
+  .dark-mode .calendar::before,
+  .dark-mode .home::before,
+  .dark-mode .contact::before,
+  .dark-mode .projects::before,
+  .dark-mode a {
+    color: rgb(203, 206, 209);
+  }
+}
+@media screen and (max-device-width: 414px), screen and (max-width: 414px){
+  .dl-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60vh; 
+  }
 }
 
-label,
-input,
-textarea {
-  margin: 10px 0;
-  display: block;
-  width: 100%;
+@media screen and (max-device-width: 768px), screen and (max-width:768px){
+  .dl-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 75vh; 
+  }
 }
-
-label {
-  font-weight: bold;
-}
-
-input,
-textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-textarea {
-  height: 200px;
-}
-
-#posts-wrapper {
-  margin-left: 200;
-  width: calc(100% -200px);
-}
-
-#posts {
-  margin-bottom: 70px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  width: 452px;
-}
-
-.entries {
-  margin-bottom: 50px;
-  width: 452px;
-}
-
-.entries-wrapper {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  width: 570px;
-}
-
-fbutton {
-  background: #b54949;
-  border: none;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding: 10px;
-  color: #ffffff;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 0.9rem;
-  font-style: normal;
-  font-weight: 400;
-  hyphens: auto;
-  letter-spacing: 1px;
-  border-radius: 3px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.dark-mode fbutton {
-  background: #00000081;
-}
-
-.dark-mode fbutton:hover {
-  color: #555555;
-}
-
-.dark-mode .input{
-  color: #262d36;
-}
-
-fbutton:hover {
-  transition: all 0.5s ease;
-  color: #f89393;
-}
-
