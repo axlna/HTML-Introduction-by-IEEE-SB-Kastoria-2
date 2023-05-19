@@ -33,7 +33,6 @@ body {
   align-items: center;
 }
 
-
 .icon-image {
   height: 70px;
   margin-top: 20px;
@@ -302,7 +301,7 @@ fbutton {
   color: #555555;
 }
 
-.dark-mode .input{
+.dark-mode .input {
   color: #262d36;
 }
 
@@ -342,13 +341,13 @@ fbutton:hover {
   font-size: x-large;
 }
 
-.discord::before {
+.email::before {
   content: "\f392";
   font: var(--fa-font-brands);
   font-size: 22px;
 }
 
-.discord::before,
+.email::before,
 .github::before {
   color: #d0d4dc;
 }
@@ -377,7 +376,10 @@ fbutton:hover {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-device-width: 414px), screen and (max-width: 414px),  screen and (max-device-width: 768px), screen and (max-width: 768px) {
+@media screen and (max-device-width: 414px),
+  screen and (max-width: 414px),
+  screen and (max-device-width: 768px),
+  screen and (max-width: 768px) {
   body {
     font-size: 1rem;
   }
@@ -394,7 +396,7 @@ fbutton:hover {
     width: 100%;
     z-index: 999;
   }
-  
+
   #iit-group {
     display: flex;
     flex-direction: row;
@@ -403,29 +405,25 @@ fbutton:hover {
   .socials {
     position: static;
     flex-direction: row;
-
   }
 
   .socials span {
     height: 100%;
     margin-right: 20px;
   }
- 
-
 
   .icon-image {
     height: 70px;
     margin-top: 5px;
     width: 70px;
-    
   }
-  
+
   .icon-image img {
     border-radius: 100px;
     height: 60px;
     width: 60px;
   }
-  
+
   .title {
     color: #ffffff;
     font-size: 1rem;
@@ -435,7 +433,7 @@ fbutton:hover {
     transform: none;
     writing-mode: horizontal-tb;
     white-space: nowrap;
-    padding: 0 10px; 
+    padding: 0 10px;
   }
   #info {
     margin: 0;
@@ -445,8 +443,6 @@ fbutton:hover {
     z-index: -1;
   }
 
-
-  
   .description {
     margin-bottom: 1rem;
     padding: 1rem;
@@ -469,8 +465,7 @@ fbutton:hover {
     width: 100%;
     box-sizing: border-box;
     position: relative;
-    margin-top: 15%; 
-    
+    margin-top: 15%;
   }
 
   #posts {
@@ -480,16 +475,14 @@ fbutton:hover {
     display: flex;
     flex-direction: column;
   }
-  
 
   .entries {
     margin-bottom: 2rem;
     width: 100%;
-    top:0;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
 
   .entries-wrapper {
@@ -507,19 +500,13 @@ fbutton:hover {
 
   form {
     max-width: 400px;
-    
   }
-  
 
-
-
-  
   textarea {
     height: 150px;
   }
 
   fbutton {
-  
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -530,7 +517,7 @@ fbutton:hover {
   .calendar::before,
   .about::before,
   .github::before,
-  .discord::before {
+  .email::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -540,52 +527,68 @@ fbutton:hover {
     font-size: 1.2rem;
   }
 
-  .home::before {
-    content: "\f015";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-  }
+ 
 
   .projects::before {
     content: "\f0ae";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+    font: var(--fa-font-solid);
   }
-
+  
   .contact::before {
     content: "\f2b9";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
+    font: var(--fa-font-regular);
   }
-
+  
   .calendar::before {
     content: "\f133";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
+    font: var(--fa-font-regular);
   }
-
+  
   .about::before {
     content: "\f007";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+    font: var(--fa-font-solid);
   }
-
+  
   .github::before {
     content: "\f09b";
-    font-family: "Font Awesome 5 Brands";
-    font-size: 1.2rem;
+    font: var(--fa-font-brands);
+    font-size: x-large;
   }
-
-  .discord::before {
-    content: "\f392";
-    font-family: "Font Awesome 5 Brands";
-    font-size: 1.2rem;
+  
+  .email::before {
+    content: "\f0e0";
+    font: var(--fa-font-regular);
+    font-size: 22px;
+    cursor: pointer;
   }
-
-  .discord::before,
+  
+  
+  .email::before,
   .github::before {
     color: #d0d4dc;
   }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    height: auto;
+    top: 5px;
+    left: 50%;
+    margin-left: -60px;
+  }
+
+  .tooltip:hover .tooltiptext,
+  .tooltip.clicked .tooltiptext {
+    visibility: visible;
+  }
 
   .dark-mode .about,
   .dark-mode .calendar::before,
@@ -604,22 +607,22 @@ fbutton:hover {
     color: rgb(203, 206, 209);
   }
 }
-@media screen and (max-device-width: 414px), screen and (max-width: 414px){
+@media screen and (max-device-width: 414px), screen and (max-width: 414px) {
   .dl-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 60vh; 
+    margin-top: 60vh;
   }
 }
 
-@media screen and (max-device-width: 768px), screen and (max-width:768px){
+@media screen and (max-device-width: 768px), screen and (max-width: 768px) {
   .dl-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 75vh; 
+    margin-top: 75vh;
   }
 }
