@@ -245,6 +245,73 @@ body,
 }
 
 
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label,
+input,
+textarea {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 200px;
+}
+
+fbutton {
+  background: #b54949;
+  border: none;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  hyphens: auto;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.dark-mode fbutton {
+  background: #00000081;
+}
+
+.dark-mode fbutton:hover {
+  color: #555555;
+}
+
+.dark-mode .input {
+  color: #262d36;
+}
+
+fbutton:hover {
+  transition: all 0.5s ease;
+  color: #f89393;
+}
+
 
 .projects::before {
   content: "\f0ae";
@@ -461,6 +528,19 @@ body,
   }
 
 
+  form {
+    max-width: 400px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  fbutton {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .home::before,
   .projects::before,
   .contact::before,
@@ -477,11 +557,6 @@ body,
     font-size: 1.2rem;
   }
 
-  .home::before {
-    content: "\f015";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-  }
 
   .projects::before {
     content: "\f0ae";
