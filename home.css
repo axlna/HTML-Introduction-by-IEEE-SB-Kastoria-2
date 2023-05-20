@@ -251,12 +251,11 @@ ul{
 .buttons.style li a{
     display: inline-block;
     width: 16.75rem;
-    height: auto;
+    height: 2rem;
     line-height: 1rem;
     padding: 0 0.5rem;
     vertical-align: middle;
     text-transform: uppercase;
-    font-size: 0.75em;
     font-weight: 500;
     border-radius: 0rem;
     overflow: hidden;
@@ -279,4 +278,20 @@ ul{
 
 }
 
+.show-mobile{
+    display: none;
+}
+.hide-mobile{
+    display: inline-block;
+}
 
+
+@media screen and (max-device-width: 414px), screen and (max-width: 414px),  screen and (max-device-width: 768px), screen and (max-width: 768px) {
+
+.hide-mobile{
+    display: none;
+}
+
+.show-mobile{
+    display: inline-block;
+}}
