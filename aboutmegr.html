@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="gr">
+  <head>
+    <title>Ρένια Ξ.</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/2260f29273.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="darkm.js"></script>
+    <script src="copy.js"></script>
+    <script src="lang.js"></script>
+
+  </head>
+  <body>
+    <div id="iit-wrapper">
+      <div id="iit-group">
+        <div class="icon-image">
+          <img
+            src="https://github.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/blob/main/00b6b5b8caf235da1a59d5c424799665.jpg?raw=true"
+          />
+        </div>
+        <div class="switch">
+          <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+          <label for="language-toggle"></label>
+          <span class="on">EN</span>
+          <span class="off">GR</span>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/axlna" target="_blank">
+            <span class="github"></span>
+          </a>
+          <div class="tooltip">
+            <span class="tooltiptext">αντ. email</span>
+            <span class="email" onclick="copyText()"></span>
+            <textarea
+              id="copyText"
+              style="position: absolute; top: -9999px; left: -9999px"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="title">Ρένια Ξυθάλη</div>
+    </div>
+    <div id="info">
+      <div class="dl-wrapper">
+        <div class="description">φοιτήτρια πληροφορικής ΠΔΜ</div>
+        <div class="links">
+          <a href="projectsgr.html">
+            <span class="projects"> πρότζεκτ </span>
+          </a>
+          <a href="contactgr.html">
+            <span class="contact"> επικοινωνία </span>
+          </a>
+        </div>
+        <button onclick="toggleDarkMode()">Σκούρο θέμα</button>
+      </div>
+    </div>
+    <div id="posts-wrapper">
+      <div id="posts">
+        <div class="entries">
+          <div class="entries-wrapper">
+            <div class="top-post-info">
+              <div class="pslr">
+                <div class="pslr-a">
+                  <div class="date">
+                    <span class="calendar"> 29/4/2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-wrapper">
+              <div class="text">
+                <blockquote class="parent">
+                  <h1>Σχετικά με εμένα</h1>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="entries">
+          <div class="entries-wrapper">
+            <div class="text-wrapper">
+              <div class="text">
+                <blockquote class="parent">
+                  <p>
+                    ⪢Γεια σας, είμαι Ρένια Ξυθάλη, προπτυχιακή φοιτήτρια Πληροφορικής στο Πανεπιστήμιο Δυτικής Μακεδονίας. Αυτή τη στιγμή μαθαίνω HTML, CSS και JavaScript και έχω  βασικές γνώσεις C.
+                  </p>
+                  <p>
+                    ⪢Είμαι ενεργό μέλος του φοιτητικού παράρτημας της IEEE του πανεπιστήμιο μου..
+                  </p>
+                  <p>Καλωσήρθατε στην ιστοσελίδα μου!</p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

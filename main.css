@@ -33,7 +33,6 @@ body {
   align-items: center;
 }
 
-
 .icon-image {
   height: 70px;
   margin-top: 20px;
@@ -44,6 +43,115 @@ body {
   border-radius: 100px;
   height: 70px;
   width: 70px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.switch > span {
+  position: absolute;
+  top: 12px;
+  pointer-events: none;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  width: 40%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+  color: #e45936;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: #fff;
+}
+
+.switch > span.on {
+  left: 0;
+  padding-left: 2px;
+  color: #e45936;
+}
+
+.switch > span.off {
+  right: 0;
+  padding-right: 4px;
+  color: #fff;
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+.check-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+  padding: 2px;
+  width: 80px;
+  height: 25px;
+  background-color: #e45936;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+}
+
+input.check-toggle-round-flat + label:before,
+input.check-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  background-color: #e45936;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+}
+
+input.check-toggle-round-flat + label:after {
+  top: 2px;
+  left: 4px;
+  bottom: 2px;
+  width: 40px;
+  background-color: #fff;
+  -webkit-border-radius: 42px;
+  -moz-border-radius: 42px;
+  -ms-border-radius: 42px;
+  -o-border-radius: 42px;
+  border-radius: 42px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 36px;
 }
 
 .title {
@@ -235,6 +343,20 @@ body.dark-mode {
   background-image: url("https://github.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/blob/main/pexels-photo-2098427.jpeg?raw=true");
 }
 
+.dark-mode .switch > span.on,
+.dark-mode input.check-toggle-round-flat:checked ~ .off {
+  color: #3aacff;
+}
+
+.dark-mode input.check-toggle-round-flat + label:before,
+.dark-mode input.check-toggle-round-flat + label {
+  background-color: #3aacff;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: #fff;
+}
+
 body,
 .description,
 .links,
@@ -243,7 +365,6 @@ body,
 #info {
   transition: all 0.5s ease;
 }
-
 
 form {
   max-width: 500px;
@@ -312,7 +433,6 @@ fbutton:hover {
   color: #f89393;
 }
 
-
 .projects::before {
   content: "\f0ae";
   font: var(--fa-font-solid);
@@ -346,7 +466,6 @@ fbutton:hover {
   cursor: pointer;
 }
 
-
 .email::before,
 .github::before {
   color: #d0d4dc;
@@ -368,7 +487,7 @@ fbutton:hover {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
- 
+
   position: absolute;
   z-index: 1;
   width: 120px;
@@ -378,10 +497,10 @@ fbutton:hover {
   margin-left: -60px;
 }
 
-.tooltip:hover .tooltiptext, .tooltip.clicked .tooltiptext {
+.tooltip:hover .tooltiptext,
+.tooltip.clicked .tooltiptext {
   visibility: visible;
 }
-
 
 .socials {
   flex-direction: column;
@@ -399,7 +518,10 @@ fbutton:hover {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-device-width: 414px), screen and (max-width: 414px),  screen and (max-device-width: 768px), screen and (max-width: 768px) {
+@media screen and (max-device-width: 414px),
+  screen and (max-width: 414px),
+  screen and (max-device-width: 768px),
+  screen and (max-width: 768px) {
   body {
     font-size: 1rem;
   }
@@ -416,7 +538,7 @@ fbutton:hover {
     width: 100%;
     z-index: 999;
   }
-  
+
   #iit-group {
     display: flex;
     flex-direction: row;
@@ -425,29 +547,25 @@ fbutton:hover {
   .socials {
     position: static;
     flex-direction: row;
-
   }
 
   .socials span {
     height: 100%;
     margin-right: 20px;
   }
- 
-
 
   .icon-image {
     height: 70px;
     margin-top: 5px;
     width: 70px;
-    
   }
-  
+
   .icon-image img {
     border-radius: 100px;
     height: 60px;
     width: 60px;
   }
-  
+
   .title {
     color: #ffffff;
     font-size: 1rem;
@@ -457,7 +575,7 @@ fbutton:hover {
     transform: none;
     writing-mode: horizontal-tb;
     white-space: nowrap;
-    padding: 0 10px; 
+    padding: 0 10px;
   }
   #info {
     margin: 0;
@@ -467,8 +585,6 @@ fbutton:hover {
     z-index: -1;
   }
 
-
-  
   .description {
     margin-bottom: 1rem;
     padding: 1rem;
@@ -491,8 +607,7 @@ fbutton:hover {
     width: 100%;
     box-sizing: border-box;
     position: relative;
-    margin-top: 15%; 
-    
+    margin-top: 15%;
   }
 
   #posts {
@@ -502,16 +617,14 @@ fbutton:hover {
     display: flex;
     flex-direction: column;
   }
-  
 
   .entries {
     margin-bottom: 2rem;
     width: 100%;
-    top:0;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
 
   .entries-wrapper {
@@ -526,7 +639,6 @@ fbutton:hover {
   .pslr {
     flex-wrap: wrap;
   }
-
 
   form {
     max-width: 400px;
@@ -556,7 +668,6 @@ fbutton:hover {
     height: 20px;
     font-size: 1.2rem;
   }
-
 
   .projects::before {
     content: "\f0ae";
@@ -616,22 +727,22 @@ fbutton:hover {
     color: rgb(203, 206, 209);
   }
 }
-@media screen and (max-device-width: 414px), screen and (max-width: 414px){
+@media screen and (max-device-width: 414px), screen and (max-width: 414px) {
   .dl-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 60vh; 
+    margin-top: 60vh;
   }
 }
 
-@media screen and (max-device-width: 768px), screen and (max-width:768px){
+@media screen and (max-device-width: 768px), screen and (max-width: 768px) {
   .dl-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 75vh; 
+    margin-top: 75vh;
   }
 }
