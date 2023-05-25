@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const currentPage = window.location.pathname;
 
-  if (currentPage.includes('aboutmegr.html')) {
+  if (currentPage.includes('aboutmegr.html'||'projectsgr.html'||'contactgr.html')) {
     checkbox.checked = true;
   } else {
     checkbox.checked = false;
@@ -15,10 +15,24 @@ document.addEventListener('DOMContentLoaded', function() {
       if (currentPage.includes('aboutme.html')) {
         window.location.href = 'aboutmegr.html';
       }
+      if (currentPage.includes('projects.html')) {
+        window.location.href = 'projectsgr.html';
+      }
+      if (currentPage.includes('contact.html')) {
+        window.location.href = 'contactgr.html';
+      }
     } else {
       if (currentPage.includes('aboutmegr.html')) {
         window.location.href = 'aboutme.html';
       }
+      if (currentPage.includes('projectsgr.html')) {
+        window.location.href = 'projects.html';
+      }
+      if (currentPage.includes('contactgr.html')) {
+        window.location.href = 'contact.html';
+      }
+      
     }
+
   });
 });
