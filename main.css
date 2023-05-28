@@ -166,7 +166,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 #info {
-  background-image: url("https://raw.githubusercontent.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/main/pexels-photo-16511744.jpeg");
+  background-image: url("https://github.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/blob/main/pics/pexels-photo-16511744.jpeg?raw=true");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -340,7 +340,7 @@ body.dark-mode {
   color: #b3b6bc;
 }
 .dark-mode #info {
-  background-image: url("https://raw.githubusercontent.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/main/pexels-photo-2098427.jpeg");
+  background-image: url("https://github.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/blob/main/pics/pexels-photo-2098427.jpeg?raw=true");
 }
 
 .dark-mode .switch > span.on,

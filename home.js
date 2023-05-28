@@ -1,8 +1,8 @@
 var gifs = [
-    'https://raw.githubusercontent.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/main/ezgif-4-a9ed182ec8.gif?token=GHSAT0AAAAAACB64LX3JFFSU7QR5P4ARG52ZCMBAJQ',
-    'https://raw.githubusercontent.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/main/ezgif-4-c63f7bd4a5.gif?token=GHSAT0AAAAAACB64LX2DKNAUYJ2KRJMHJBGZCMBAKA',
-    'https://raw.githubusercontent.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/main/ezgif-4-54f75ca818.gif?token=GHSAT0AAAAAACB64LX3U5LCGGWFVGIO4DOWZCMBAIA',
-    'https://raw.githubusercontent.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/main/dayo3ow-7ac86c31-8b2b-4810-89f2-e6134caf1f2d.gif'
+    'https://github.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/blob/main/pics/ezgif-4-a9ed182ec8.gif?raw=true',
+    'https://github.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/blob/main/pics/ezgif-4-c63f7bd4a5.gif?raw=true',
+    'https://github.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/blob/main/pics/ezgif-4-54f75ca818.gif?raw=true',
+    'https://github.com/axlna/HTML-Introduction-by-IEEE-SB-Kastoria-2/blob/main/pics/dayo3ow-7ac86c31-8b2b-4810-89f2-e6134caf1f2d.gif?raw=true'
   ];
   
   var defaultGif = gifs[gifs.length - 1];
