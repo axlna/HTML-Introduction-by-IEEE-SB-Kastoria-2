@@ -12,6 +12,7 @@
     <script src="darkm.js"></script>
     <script src="copy.js"></script>
     <script src="lang.js"></script>
+    <script src="contact.js"></script>
 
   </head>
   <body>
@@ -67,7 +68,7 @@
       <div id="posts">
         <div class="entries">
           <div class="entries-wrapper">
-            <form name="contact" method="POST" action="/" netlify onsubmit="event.preventDefault();">
+            <form name="contact" method="POST" action="/" netlify>
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" required />
             
@@ -79,7 +80,6 @@
             
               <button class="fbutton" type="submit">Send</button>
             </form>
-            
             
           </div>
         </div>
