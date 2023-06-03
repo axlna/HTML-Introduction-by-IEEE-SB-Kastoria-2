@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('Form submitted!'); 
   
       form.reset();
-      alert('Message sent!');
     });
   });
   
