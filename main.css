@@ -407,7 +407,7 @@ textarea {
   height: 200px;
 }
 
-fbutton {
+.fbutton {
   background: #b54949;
   border: none;
   margin-top: 2em;
@@ -423,13 +423,14 @@ fbutton {
   border-radius: 3px;
   padding-left: 30px;
   padding-right: 30px;
+  cursor: pointer ;
 }
 
-.dark-mode fbutton {
+.dark-mode .fbutton {
   background: #00000081;
 }
 
-.dark-mode fbutton:hover {
+.dark-mode .fbutton:hover {
   color: #555555;
 }
 
@@ -437,7 +438,7 @@ fbutton {
   color: #262d36;
 }
 
-fbutton:hover {
+.fbutton:hover {
   transition: all 0.5s ease;
   color: #f89393;
 }
@@ -657,7 +658,7 @@ fbutton:hover {
     height: 150px;
   }
 
-  fbutton {
+  .fbutton {
     padding-left: 20px;
     padding-right: 20px;
   }
