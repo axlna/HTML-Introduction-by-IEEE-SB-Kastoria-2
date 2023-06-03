@@ -262,6 +262,7 @@ ul {
 }
 
 .buttons.style li a {
+  font-size: 20px;
   display: inline-block;
   width: 16.75rem;
   height: 2rem;
