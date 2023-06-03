@@ -1,3 +1,8 @@
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+  
+    console.log('Form submitted!'); 
+
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('form[name="contact"]');
     const nameInput = document.getElementById('name');
@@ -17,4 +22,4 @@ document.addEventListener('DOMContentLoaded', function() {
       
       alert('Message sent!');
     });
-  });
+  })});
