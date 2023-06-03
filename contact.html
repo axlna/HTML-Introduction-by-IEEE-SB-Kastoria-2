@@ -67,18 +67,19 @@
       <div id="posts">
         <div class="entries">
           <div class="entries-wrapper">
-            <form name="contact" method="POST" netlify>
+            <form name="contact" method="POST" action="/" netlify>
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" required />
-
+            
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" required />
-
+            
               <label for="message">Message:</label>
               <textarea id="message" name="message" required></textarea>
-
-              <div class='fbutton' type="submit">Send</fbutton>
+            
+              <button class="fbutton" type="submit">Send</button>
             </form>
+            
           </div>
         </div>
       </div>
