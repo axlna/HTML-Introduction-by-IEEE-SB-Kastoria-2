@@ -423,7 +423,7 @@ textarea {
   border-radius: 3px;
   padding-left: 30px;
   padding-right: 30px;
-  cursor: pointer ;
+  cursor: pointer;
 }
 
 .dark-mode .fbutton {
@@ -531,7 +531,9 @@ textarea {
 @media screen and (max-device-width: 414px),
   screen and (max-width: 414px),
   screen and (max-device-width: 768px),
-  screen and (max-width: 768px) {
+  screen and (max-width: 768px),
+  screen and (max-device-width: 1024px),
+  screen and (max-width: 1024px) {
   body {
     font-size: 1rem;
   }
@@ -595,22 +597,30 @@ textarea {
     z-index: -1;
   }
 
+
+  
   .description {
     margin-bottom: 1rem;
     padding: 1rem;
     max-width: 100%;
   }
-
+  
   .links {
     flex-wrap: wrap;
-
     margin-top: 1rem;
     padding: 1rem;
   }
-
-  .links a {
-    margin: 0.5rem;
+  
+  button {
+    margin-top: 1rem;
   }
+  
+  
+  
+  
+  
+  
+  
 
   #posts-wrapper {
     padding: 1rem;
