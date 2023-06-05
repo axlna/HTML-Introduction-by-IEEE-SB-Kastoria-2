@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const currentPage = window.location.pathname;
 
-  if (currentPage.includes('aboutmegr.html'||'projectsgr.html'||'contactgr.html'||'homegr.html')) {
+  const storedLanguage = localStorage.getItem('language');
+  if (storedLanguage === 'greek') {
     checkbox.checked = true;
   } else {
     checkbox.checked = false;
@@ -12,6 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   checkbox.addEventListener('change', function() {
     if (this.checked) {
+      localStorage.setItem('language', 'greek'); // Store selected language
+      switchLanguage('greek');
+    } else {
+      localStorage.setItem('language', 'english'); // Store selected language
+      switchLanguage('english');
+    }
+  });
+
+  function switchLanguage(language) {
+    if (language === 'greek') {
       if (currentPage.includes('aboutme.html')) {
         window.location.href = 'aboutmegr.html';
       }
@@ -38,6 +49,9 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'home.html';
       }
     }
+  }
 
-  });
+  if (storedLanguage) {
+    switchLanguage(storedLanguage);
+  }
 });
